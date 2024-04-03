@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="boxes_header">
+                <i class="fa-light fa-mobile"></i>
+                <div id="numbers_time">
+                    <a href="#" class="number_tell_header" onclick="copyText('+994 50 333 51 81')">+994 50 333 51 81</a>
+                    <p>9:00 - 23:00</p>
+                </div>
+            </div>
+            <div id="center_header">
+                <div id="img_header">
+                    <img src="https://demo-storage.com/pm/wp/vincent/wp-content/themes/vincent/img/logo.png" alt="">
+                </div>
+            </div>
+            <div class="boxes_header none">
+                <i class="fa-light fa-mobile"></i>
+                <div id="numbers_time">
+                    <span>
+                        <a href="#" class="number_tell_header" onclick="copyText('+994 50 333 51 81')">+994 50 333 51 81</a>
+                    </span>
+                    <p>9:00 - 23:00</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="first_section">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/imgs/wine-6878013_1280.jpg" alt="" style="width: 100%;">
+                        <div class="text_swiper">
+                            <h3>Çay Verərsən?</h3>
+                            <p>Xoş Gəlmisiz</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/imgs/wine-6878013_1280.jpg" alt="" style="width: 100%;">
+                        <div class="text_swiper">
+                            <h3>Çay Var?</h3>
+                            <p>Hə Var!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/imgs/wine-6878013_1280.jpg" alt="" style="width: 100%;">
+                        <div class="text_swiper">
+                            <h3>Aə Bura Haradi?</h3>
+                            <p>Bura ən sevdiyin yer!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev dsnone"></div>
+            <div class="swiper-button-next dsnone"></div>
+        </section>
+        <section id="second_section">
+            <div class="container">
+                <h1>Bizim Menyumuz</h1>
+                <div class="menyu_main">
+                    <h3>
+                        <a href="#">
+                            Burgerlər
+                        </a>
+                    </h3>
+                    <h3>
+                        <a href="#">
+                            Desertlər
+                        </a>
+                    </h3>
+                    <h3>
+                        <a href="#">
+                            Icki
+                         </a>
+                    </h3>
+                    <h3>
+                        <a href="#">
+                            Qəlyan
+                        </a>
+                    </h3>
+                    <h3>
+                        <a href="#">
+                            Qəlyanaltı
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div id="footer_img">
+                <img src="https://demo-storage.com/pm/wp/vincent/wp-content/themes/vincent/img/logo_footer.png" alt="">
+            </div>
+            <div id="footer_text">
+                <span>
+                    <a href="#" class="number_tell_footer" onclick="copyText('+994 50 333 51 81')">
+                        +994 50 333 51 81
+                    </a>
+                </span>
+                <p>9:00 - 23:00</p>
+            </div>
+            <p id="copyright">Copyright © 2024 Vincent. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 5,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 30
+                },
+                1024: {
+                    spaceBetween: 50
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -60,7 +60,7 @@ const getData = ()=>{
             let tdAbout = document.createElement("td");
             tdAbout.setAttribute("key","about")
             let tdImage = document.createElement("td");
-            tdImage.setAttribute("key","imageUrl")
+            tdImage.setAttribute("key","image")
             let tdEdit = document.createElement("td");
             tdName.innerText=food.name;
             tdPrice.innerText=food.price;
